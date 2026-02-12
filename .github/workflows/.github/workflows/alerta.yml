@@ -1,0 +1,14 @@
+name: Notificacion de Despliegue
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar alerta a ntfy.sh
+        run: |
+          curl -d "Despliegue exitoso en la rama main de alan72-sys!" ntfy.sh/devops-itla
