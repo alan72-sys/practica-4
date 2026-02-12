@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Enviar alerta a ntfy.sh
         run: |
-          curl -d "Despliegue exitoso" ntfy.sh/devops-itla
+          curl -d "Despliegue exitoso por parte de Alan Garcia(2024-0040)" ntfy.sh/devops-itla
